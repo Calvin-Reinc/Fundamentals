@@ -1,4 +1,4 @@
-# Task 5: Write a program that creates a simple phone book using a dictionary (or object in JavaScript). 
+# Task 5: Write a program that creates a simple phone book using a dictionary. 
 # Allow the user to add new contacts, delete contacts, and search for a contact by name.
 phoneList = {}
 

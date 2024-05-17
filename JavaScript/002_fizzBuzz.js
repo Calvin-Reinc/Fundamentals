@@ -8,8 +8,7 @@ function FizzBuzz(number) {
     for (let i = 1; i < number+1; i++) {
         if (i%3==0 && i%5==0) {
             console.log("FizzBuzz");
-        }
-        else { 
+        } else { 
             if (i%3==0) {
                 console.log("Fizz");
             } else {
@@ -19,7 +18,6 @@ function FizzBuzz(number) {
                 console.log(i);
                 }
             }
-            
         }
     }
 }

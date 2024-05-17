@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="mytest">
+        <div id="titleDiv">
+            <h1 id="title">Health Awareness Survey Form</h1>
+            <p id="description">Thank you for taking your time to help us save lives</p>
+        </div>
+        <fieldset>
+            <form action="#" id="survey-form">
+                <label for="name" id="name-label">Name
+                    <input class="textFields" type="text" id="name" required placeholder="Tim Cook">
+                </label>
+                <label for="email" id="email-label">Email
+                    <input class="textFields" type="email" id="email" required placeholder="Tim@apple.com">
+                </label>
+                <label for="number" id="number-label" >Phone (Optional)
+                    <input class="textFields" type="number" id="number" max="27800000000" min="27600000000" placeholder="2772 981 2336">
+                </label>
+                <label for="dropdown" id="dropdown-label">Which option best describe your diet currently?
+                    <select id="dropdown" class="textFields">
+                        <option>Veganism</option>
+                        <option>Keto</option>
+                        <option>Low-carbohydrate diet</option>
+                        <option>Mediterranean diet</option>
+                    </select>
+                </label>
+                <label>How many times do you drink water? (Select one)
+                    <label><input type="radio" value="Yes"name="skills" id=""> 1-2 times a day</label>
+                    <label><input type="radio" value="No"name="skills" id=""> 3-4 times a day</label>
+                    <label><input type="radio" value="Maybe"name="skills" id=""> 5+ times a day</label>
+                </label>
+                <label>Which unhealthy foods do you eat regularly? (Select all applicable)
+                    <label><input type="checkbox" value="option1" id=""> cakes and biscuits</label>
+                    <label><input type="checkbox" value="option2" id=""> fast foods (such as hot chips, burgers and pizzas)</label>
+                    <label><input type="checkbox" value="option3" id=""> chocolate and sweets</label>
+                    <label><input type="checkbox" value="option4" id=""> processed meat (such as bacon)</label>
+                    <label><input type="checkbox" value="option4" id=""> snacks (such as chips)</label>
+                    <label><input type="checkbox" value="option4" id=""> sugary drinks (such as sports, energy and soft drinks)</label>
+                    <label><input type="checkbox" value="option4" id=""> alcoholic drinks</label>
+                </label>
+                <label for="comments">Any comments or suggestion?
+                    <textarea id="comments" placeholder="Enter your comments here"></textarea>
+                </label>
+                <label for="submit">
+                    <input type="submit" id="submit" value="Submit" class="textFields">
+                </label>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
