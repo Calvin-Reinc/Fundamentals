@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction_Python">
+            <header class="head">Introduction Python</header>
+            <p>Python is a high-level, interpreted programming language known for its readability, simplicity, and wide range of applications. Created by Guido van Rossum and first released in 1991, Python emphasizes code readability and allows developers to express concepts in fewer lines of code compared to languages like C++ or Java.</p>
+            <label for="snippet">Basic python code:</label>
+            <code id="snippet">print("Hello, World!")</code>
+            <ul>
+                <li>Easy to Read, Learn, and Write: Python's syntax is clear and intuitive, making it an excellent choice for beginners</li>
+                <li>Interpreted Language: Python code is executed line by line, which makes debugging easier and development faster.</li>
+                <li>Dynamically Typed: Variables in Python do not need an explicit declaration to reserve memory space.</li>
+                <li>Vast Standard Library: Python’s standard library supports many common programming tasks such as file I/O, system calls, and even Internet protocols.</li>
+                <li>The Zen of Python: The Zen of Python is a set of guiding principles for writing computer programs in Python, which can be accessed by entering import this in the Python interpreter. Some key principles include readability counts, simplicity, and practicality.</li>
+                <li>Extensible and Embeddable: Python can extend functionalities using modules written in other languages like C or C++.</li>
+                <li>Wide Range of Applications: Python is used in web development, data science, artificial intelligence, scientific computing, and more.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Installing_python">
+            <header>Installing Python</header>
+            <p>Python can be installed on different operating systems, including Windows, macOS, and Linux. The official Python website provides installers and packages for each platform.</p>
+            <h2>Installation Steps: </h2>
+            <label for="">1. Download Python Installer</label>
+            <ul>
+                <li>Visit the official Python website python.org.</li>
+                <li>Click on the "Downloads" tab.</li>
+                <li>Choose the appropriate installer for your operating system.</li>
+            </ul>
+            <label for="">2. Run Python Installer</label>
+            <h5>Windows:</h5>
+            <ul>  
+                <li>Double-click the downloaded .exe file.</li>
+                <li>Check the box that says "Add Python to PATH".</li>
+                <li>Click "Install Now" to begin the installation.</li>
+            </ul>
+            <h5>macOS</h5>
+            <ul>  
+                <li>Double-click the downloaded .pkg file.</li>
+                <li>Follow the on-screen instructions to complete the installation.</li>
+                
+
+            </ul>
+            <h5>Linux</h5>
+            <ul>  
+                <li>Open a terminal.</li>
+                <li>Navigate to the directory containing the downloaded installer.</li>
+                <li>Run the following command:</li>
+            </ul>
+            <code>sudo ./&lt;installer_filename&gt;.sh</code>
+            <p class="caption">Replace `&lt;installer_filename&gt;` with the name of the downloaded installer.</p>
+            <label for="">3. Verify Installation</label>
+            <h5>Windows and macOS</h5>
+            <ul>  
+                <li>Open a command prompt or terminal.</li>
+                <li>Run the following command:</li>
+            </ul>
+            <code>python --version</code>
+            <h5>Linux</h5>
+            <ul>  
+                <li>Open a terminal.</li>
+                <li>Run the following command:</li>
+            </ul>
+            <code>python3 --version</code>
+            <p class="caption"></p>
+            <label for="">4. Install Python Packages (Optional)</label>
+            <p>Python comes with a standard library, but you may need additional packages for your projects. You can install packages using the package manager pip.</p>
+            <h5>Example:</h5>
+            <p class="caption">To install the requests package, run the following command:</p>
+            <code>pip install requests</code>
+            <p class="caption"></p>
+            <label for="">5. Set Up Virtual Environments (Optional))</label>
+            <p>Virtual environments allow you to create isolated environments for different projects, each with its own dependencies.</p>
+            <h5>Install "virtualenv" (Optional)</h5>
+            <ul>
+                <li>Run the following command:</li>
+            </ul>
+            <code>pip install virtualenv</code>
+            <h5>Install "virtualenv" (Optional)</h5>
+            <ul>
+                <li>Navigate to your project directory.</li>
+                <li>Run the following command to create a virtual environment named "myenv":</li>
+            </ul>
+            <code>virtualenv myenv</code>
+            <h5>Activate the Virtual Environment</h5>
+            <p>Run the following commands based on your Operating software</p>
+            <ul>
+                <li>Windows:</li>
+            </ul>
+            <code>myenv\Scripts\activate</code>
+            <ul>
+                <li>macOS/ Linux</li>
+            </ul>
+            <code>source myenv\bin\activate</code>
+            <p class="caption"></p>
+            <label for="">Conclusion</label>
+            <p>Installing Python is a simple process that involves downloading the installer from the official website and running it on your system. Once installed, you can start writing and executing Python code. Additionally, you can use package managers like "pip" to install additional packages and create virtual environments to manage dependencies for different projects.</p>
+        </section>
+
+        <section class="main-section" id="Variables_and_Data_Types">
+            <header>Variables and Data Types</header>
+            <h2>Variables</h_and2>
+            <label for="">Definition:</label>
+            <p>A variable in Python is a reserved memory location used to store data values. Unlike other programming languages, Python does not require explicit declaration of variables before their use.</p>
+            <label for="">Naming Convention:</label>            
+            <ul>
+                <li>Variable names in Python can contain alphabets, digits, and underscores.</li>
+                <li>They must begin with a letter (a-z, A-Z) or an underscore (_).</li>
+                <li>Variable names are case-sensitive (myVariable and MyVariable are different variables).</li>
+            </ul>
+            <label for="">Example:</label>
+            <code>x = 5<br>y = "Hello, World!"</code>
+            <h2>Data Types</h2>
+            <label for="">1. Numeric Types</label>
+            <ul>
+                <li>int: Integer numbers (e.g., 5, -3, 0).</li>
+                <li>float: Floating-point numbers with decimal points (e.g., 3.14, -0.001).</li>
+            </ul>
+            <label for="">2. Sequence Types</label>
+            <ul>
+                <li>str: Strings of characters, enclosed in single ('') or double ("") quotes (e.g., "Hello", 'Python').</li>
+                <li>list: Ordered, mutable collection of items (e.g., [1, 2, 3], ['apple', 'banana', 'cherry']).</li>
+                <li>tuple: Ordered, immutable collection of items (e.g., (1, 2, 3), ('apple', 'banana', 'cherry')).</li>
+            </ul>
+            <label for="">3. Mapping Type</label>
+            <ul>
+                <li>dict: Unordered collection of key-value pairs (e.g., {'name': 'John', 'age': 30}).</li>
+            </ul>
+            <label for="">4. Set Types</label>
+            <ul>
+                <li>set: Unordered collection of unique items (e.g., {1, 2, 3}).</li>
+            </ul>
+            <label for="">5. Boolean Types</label>
+            <ul>
+                <li>bool: Represents Boolean values True or False.</li>
+            </ul>
+            <label for="">Example</label>
+            <code># Numeric Types<br>
+                x = 5       # int<br>
+                y = 3.14    # float<br><br>
+                # Sequence Types<br>
+                name = "Python"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# str<br>
+                my_list = [1, 2, 3]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# list<br>
+                my_tuple = ('a', 'b', 'c') # tuple<br><br>
+                
+                # Mapping Type<br>
+                person = {'name': 'John', 'age': 30}    # dict<br>
+                
+                # Set Type<br><br>
+                my_set = {1, 2, 3}                      # set<br>
+                
+                # Boolean Type<br><br>
+                is_valid = True &nbsp;&nbsp;&nbsp;# bool<br>
+                </code>
+            <p class="caption"></p>    
+            <label for="">Type Conversion (Casting):</label>
+                <p>You can convert between different data types using built-in functions like "int()", "float()", "str()", "list()", "tuple()", "dict()", and "set()".</p>
+                <label for="">Example:</label>
+                <code>
+                    # Convert int to float<br>
+                    x = float(5)<br><br>
+
+                    # Convert float to int<br>
+                    y = int(3.14)<br><br>
+
+                    # Convert int to string<br>
+                    z = str(5)<br>
+                </code>
+            <br>
+            <label for="">Conclusion:</label>
+                <p>Understanding variables and data types is fundamental in Python programming. Python provides a rich set of built-in data types to handle various types of data, making it a versatile language suitable for a wide range of applications.</p>
+        </section>
+
+        <section class="main-section" id="Conditional_Statements">
+            <header>Conditional Statements</header>
+                <h2>Introduction</h2>
+                <p>Conditional statements in Python allow you to execute different blocks of code based on whether a specified condition evaluates to True or False. The two primary conditional statements in Python are the if-else statement and the if statement.</p>
+                <h2>1. if-else Statement</h2>
+                <label>Syntax:</label>
+                <code>if condition:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;# Code block to execute if condition is True<br>
+                    else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;# Code block to execute if condition is False<br>
+                </code>
+                <br>
+                <label>Example:</label>
+                <code>x = 5<br>
+                    if x > 0:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("x is positive")<br>
+                    else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("x is non-positive")
+                    </code>
+                <br>
+                <label>Explanation</label>
+                <ul>  
+                    <li>If the condition specified after the "if" keyword evaluates to "True", the code block indented under the "if" statement is executed.</li>
+                    <li>If the condition evaluates to "False", the code block indented under the "else" statement is executed.</li>
+                </ul>
+                <h2>2. if Statement (without else)</h2>
+                <label>Syntax:</label>
+                <code>if condition:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;# Code block to execute if condition is True
+                </code>
+                <br>
+                <label>Example:</label>
+                <code>x = 5 <br>
+                    if x > 0: <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("x is positive")
+                </code>
+                <br>
+                <label>Explanation</label>
+                <ul>
+                    <li>If the condition specified after the "if" keyword evaluates to "True", the code block indented under the "if" statement is executed.</li>
+                    <li>If the condition evaluates to "False", the code block is skipped, and no further action is taken.</li>
+                </ul>
+            
+                <h2>3. Nested if-else Statements</h2>
+                <p>You can nest "if-else" statements within each other to handle multiple conditions.</p>
+                <label>Example:</label>
+                <code>
+                    x = 5 <br>
+                    if x > 0:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("x is positive")<br>
+                    else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;if x == 0:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("x is zero")<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("x is negative")<br>
+                </code>
+                <br>
+                <label for="">Explanation:</label>
+                <ul>
+                    <li>In this example, if "x" is greater than "0", the first "if" block is executed.</li>
+                    <li>If "x" is not greater than "0", the "else" block is executed, which contains another "if-else" statement to handle the cases where "x" is zero or negative.</li>
+                </ul>
+                <h2>Multiple Conditions with "elif"</h2>
+                <p>You can use the "elif" keyword to specify additional conditions in between the "if" and "else" statements.</p>
+                <label for="">Example:</label>
+                <code>x = 5 <br>
+                    if x > 0: <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("x is positive") <br>
+                    elif x == 0: <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("x is zero") <br>
+                    else: <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("x is negative") <br>
+                </code>
+                <br>
+                <label for="">Explanation:</label>
+                <ul>
+                    <li>The "elif" keyword allows you to check multiple conditions sequentially.</li>
+                    <li>If the condition after the "if" keyword is "True", the corresponding block is executed, and the rest of the "elif" and "else" blocks are skipped.</li>
+                </ul>
+                <label>Conclusion</label>
+                <p>Conditional statements in Python provide a way to execute different blocks of code based on specified conditions. Whether you need to perform simple or complex decision-making in your program, if-"else" and "if" statements give you the flexibility to handle various scenarios.</p>
+        </section>
+
+        <section class="main-section" id="Loops_for_and_while">
+            <header>Loops for and while</header>
+            <h2>Introduction</h2>
+            <p>Loops in Python provide a way to execute a block of code repeatedly. Python supports two main types of loops: the "for" loop and the "while" loop. Each type of loop serves different purposes and can be used to solve various programming problems efficiently.</p>
+            <h2>1. "for" Loop</h2>
+            <label for="">Syntax</label>
+            <code>for variable in iterable: <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;# Code block to execute
+            </code>
+            <br>
+            <label for="">Explanation</label>
+            <li>The "for" loop iterates over each item in the iterable (such as a list, tuple, string, or range).</li>
+            <li>For each iteration, the loop assigns the current item to the "variable" and executes the code block.</li>
+            <br>
+            <label for="">Explanation</label>
+            <code># Iterating over a list <br> 
+                numbers = [1, 2, 3, 4, 5] <br>
+                for num in numbers: <br> 
+                &nbsp;&nbsp;&nbsp;&nbsp;print(num) <br>
+            </code>
+            <br>
+            <label for="">Using "range()" with "for" Loop:</label>
+            <p>The range"()" function generates a sequence of numbers, which is often used with "for" loops.</p>
+            <h5>Example:</h5>
+            <br>
+            <code># Printing numbers from 0 to 4 <br>
+                for i in range(5): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(i) <br>
+            </code>
+            <h2>2. "while" Loop</h2>
+            <label for="">Syntax</label>
+            <code>while condition: <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;# Code block to execute <br>
+            </code>
+            <br>
+            <label for="">Explanation</label>
+            <ul>
+                <li>The "while" loop continues to execute the code block as long as the condition evaluates to "True".</li>
+                <li>If the condition becomes "False", the loop stops.</li>
+            </ul>
+            <label for="">Example:</label>
+            <code># Printing numbers from 0 to 4 using a while loop <br> 
+                i = 0 <br>
+                while i < 5: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(i) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;i += 1 <br>
+            </code>
+            <br>
+            <h2>Loop Control Statements</h2>
+            <p>Python provides several control statements that allow you to modify the behavior of loops.</p>
+            <label for="">"break" Statement:</label>
+            <p>The "break" statement terminates the loop prematurely.</p>
+            <h5>Example:</h5>
+            <br>
+            <code># Using break to exit the loop when a condition is met <br>
+                for i in range(10): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;if i == 5: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(i) <br>
+            </code>
+            <br>
+            <label for="">"continue" Statement:</label>
+            <p>The "continue" statement skips the rest of the code inside the loop for the current iteration and moves to the next iteration.</p>
+            <h5>Example:</h5>
+            <br>
+            <code># Using continue to skip an iteration when a condition is met <br>
+                for i in range(10): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;if i % 2 == 0: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(i) <br>
+            </code>
+            <br>
+            <label for="">"else" Clause with Loops:</label>
+            <p>Both "for" and "while" loops can have an "else" clause, which executes after the loop completes normally (i.e., not terminated by "break").</p>
+            <h5>Example:</h5>
+            <br>
+            <code># Using else with a for loop <br>
+                for i in range(5): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(i) <br>
+                else: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print("Loop completed normally") <br><br>
+                
+                # Using else with a while loop <br>
+                i = 0 <br>
+                while i < 5: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(i) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;i += 1 <br>
+                else: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print("Loop completed normally") <br>
+            </code>
+            <br>
+            <label for="">Nested Loops</label>
+            <p>Loops can be nested within each other, allowing you to perform more complex iterations.</p>
+            <h5>Example</h5>
+            <br>
+            <code># Nested for loop <br>
+                for i in range(3): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;for j in range(2): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(f"i: {i}, j: {j}") <br>
+            </code>
+            <p>they need atleast ten elements in here to pass tests</p>
+            <p>they need atleast ten elements in here to pass tests</p>
+            <p>they need atleast ten elements in here to pass tests</p>
+            <code>code snippets go in here</code>
+            <ul>
+                <li>more than five things needed</li>
+            </ul>
+            <h2>Conclusion</h2>
+            <p>Loops are a fundamental aspect of Python programming, providing a mechanism to repeat tasks efficiently. The "for" loop is ideal for iterating over sequences, while the "while" loop is suited for repeated execution as long as a condition holds true. Loop control statements ("break", "continue", "else") offer additional flexibility, allowing you to manage loop execution flow more precisely. Nested loops enable the execution of complex iterations, making Python loops a powerful tool for various programming tasks.</p>
+        </section>
+
+        <section class="main-section" id="Exceptions_Handling">
+            <header>Exceptions Handling</header>
+            <h2>Introduction</h2>
+            <p>Exception handling in Python provides a way to manage errors and exceptional conditions that may occur during the execution of a program. By using exception handling, you can ensure your program continues to operate under unexpected conditions and can handle errors gracefully.</p>
+            <h2>Basics of Exception Handling</h2>
+            <label for="">What is an exception?</label>
+            <p>An exception is an event that occurs during the execution of a program that disrupts the normal flow of instructions. When an error occurs, Python generates an exception, which can be handled using the "try" and "except" blocks.</p>
+            <label for="">Syntax</label>
+            <code>try: <br>
+                # Code that might raise an exception <br>
+                except ExceptionType: <br>
+                # Code to handle the exception <br>
+            </code>
+            <br>
+            <label for="">Example</label>
+            <code>try: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;result = 10 / 0 <br>
+                except ZeroDivisionError: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print("You can't divide by zero!") <br>
+            </code>
+            <h2>Handling Multiple Exceptions</h2>
+            <p>You can handle multiple exceptions by specifying different except blocks for each exception type.</p>
+            <label for="">Syntax:</label>
+            <code>try: <br>
+                    # Code that might raise multiple exceptions <br>
+                except ExceptionType1: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;# Code to handle ExceptionType1 <br>
+                except ExceptionType2: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;# Code to handle ExceptionType2 <br>
+            </code>
+            <br>
+            <label for="">Example:</label>
+            <code>try: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;    value = int(input("Enter a number: ")) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;    result = 10 / value <br>
+                except ValueError: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;    print("That's not a valid number!") <br>
+                except ZeroDivisionError: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;    print("You can't divide by zero!") <br>
+            </code>
+            <h2>The "else" clause</h2>
+            <p>The "else" clause can be used to execute code if no exceptions were raised in the "try" block.</p>
+            <label for="">Syntax:</label>
+            <code>try: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;    # Code that might raise an exception <br>
+                except ExceptionType: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;    # Code to handle the exception <br>
+                else: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;    # Code to execute if no exception occurs <br>
+            </code>
+            <br>
+            <label for="">Example:</label>
+            <code>try: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;    result = 10 / 2 <br>
+                except ZeroDivisionError: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;    print("You can't divide by zero!") <br>
+                else: <br> 
+                &nbsp;&nbsp;&nbsp;&nbsp;    print("Division successful:", result) <br>
+            </code>
+            <h2>The "finally" Clause</h2>
+            <p>The "finally" clause can be used to specify a block of code that will be executed no matter what, whether an exception was raised or not.</p>
+            <label for="">Syntax:</label>
+            <code>try: <br> 
+                &nbsp;&nbsp;&nbsp;&nbsp;    # Code that might raise an exception <br>
+                except ExceptionType: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;    # Code to handle the exception <br>
+                finally: <br>    
+                &nbsp;&nbsp;&nbsp;&nbsp;    # Code to execute no matter what <br>
+            </code>
+            <br>
+            <label for="">Example:</label>
+            <code>try: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;   result = 10 / 2 <br>
+                except ZeroDivisionError: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;    print("You can't divide by zero!") <br>
+                finally: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;    print("This will execute no matter what.") <br>
+            </code>
+            <h2>Raising Exceptions</h2>
+            <p>You can raise exceptions using the "raise" keyword. This can be useful to signal that an error has occurred.</p>
+            <label for="">Syntax:</label>
+            <code>raise ExceptionType("Error message")</code>
+            <br>
+            <label for="">Example</label>
+            <code>def check_positive(number): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;if number < 0: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise ValueError("The number must be positive.") <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return number <br><br>
+                try: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;check_positive(-10) <br>
+                except ValueError as e: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(e) <br>
+            </code>
+            <h2>Custom Exceptions</h2>
+            <p>You can create custom exception classes to handle specific errors in your program. Custom exceptions should inherit from the base "Exception" class.</p>
+            <label for="">Syntax</label>
+            <code>class CustomError(Exception): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;pass <br> <br>
+                try: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;raise CustomError("This is a custom error.") <br>
+                except CustomError as e: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(e) <br>
+            </code>
+            <h2>Conclusion</h2>
+            <p>Exception handling in Python is a powerful mechanism to manage errors and exceptional conditions gracefully. By using "try", "except", "else", and "finally" blocks, you can ensure that your program can handle unexpected situations and continue to function correctly. Additionally, you can raise exceptions and create custom exceptions to handle specific errors in your applications.</p>
+        </section>
+
+        <nav id="navbar">
+            <header>Python Documentation</header>
+            <a href="#Introduction_Python" class="nav-link">Introduction Python</a>
+            <a href="#Installing_python" class="nav-link">Installing Python</a>
+            <a href="#Variables_and_Data_Types" class="nav-link">Variables and Data Types</a>
+            <a href="#Conditional_Statements" class="nav-link">Conditional Statements</a>
+            <a href="#Loops_for_and_while" class="nav-link">Loops for and while</a>
+            <a href="#Exceptions_Handling" class="nav-link">Exceptions Handling</a>
+        </nav>
+    </main>
+</body>
+</html>
