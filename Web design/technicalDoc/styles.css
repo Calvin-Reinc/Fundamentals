@@ -75,16 +75,29 @@ label {
 }
 
 
-code {
+.code-block {
     background-color: #2a2a2b;
     color: white;
     padding: 12px 10px;
     margin-left: 20px;
-    border-radius: 3px;
+    border-radius: 0px 0px 3px 3px;
     display: flex;
     width: 30rem;
     line-height: 1.7;
 }
+
+.code-block-tag {
+    display: flex;
+    padding: 7px;
+    color: white;
+    background-color: #7f8b8f;
+    margin-left: 20px;
+    width: 30rem;
+    border-radius: 3px 3px 0px 0px;
+    border: 1px solid #6e7a6a;
+}
+
+
 .caption {
     margin-left: 20px;
 }
