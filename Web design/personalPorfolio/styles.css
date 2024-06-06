@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+}
+html, body {
+    background: linear-gradient(270deg,  #1F4D48, #2E5771,#1F244D 80%);
+}
+
+@media (max-width=768px) {
+    
+}
+
+section:first-of-type {
+    padding-top: 3.2rem;
+}
+
+#welcome-section {
+    display: flex;
+    color: #DEEAF2;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(240deg,  #1F4D48, #2E5771,#1F244D);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    margin: 5px auto;
+}
+
+#more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+button {
+    padding: 10px;
+    border: none;
+    font-weight: 900;
+    color: white;
+    background-color: #1F4D48;
+}
+
+#projects-div {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.project-tile {
+    display: flex;
+    margin: 20px;
+    align-items: end;
+    justify-content: center;
+    border-radius: 5px;
+}
+.project-tile > a {
+    background-color: rgba(12, 170, 233, 0.865);
+    text-decoration: none;
+    color: black;
+    border-radius: 2px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+
+.project1 {
+    background-image: url('media/project1.png');
+    background-size: cover;
+}
+.project2 {
+    background-image: url('media/project2.png');
+    background-size: contain;
+}
+.project3 {
+    background-image: url('media/project3.png');
+    background-size: contain;
+}
+.project4 {
+    background-image: url('media/project4.png');
+    background-size: contain;
+}
+
+#details {
+    background-color: #1F244D;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px 30px;
+}
+.list-span {
+    margin: 0 10px;
+}
+
+
+#navbar {
+    background-color: #498BB6;
+    position: fixed;
+    top: 0;
+    height: 3.2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: monospace !important;
+    color: antiquewhite;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.list-a {
+    text-decoration: none;
+    color: white;
+}
+
+
