@@ -1,7 +1,6 @@
 * {
     font-family: "Roboto";
     box-sizing: border-box;
-    /* border: 1px solid black; */
     margin: 0;
     padding: 0;
 }
@@ -15,17 +14,25 @@ html, body {
 #header {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f8f8;
+    padding: 10px 40px;
+    background-color: #e9e6e6;
     width: 100%;
     position: fixed;
     top: 0;
     gap: 7px;
+    /* padding: 15px; */
 
 }
 
 #nav-bar {
     margin-left: auto;
+}
+
+#nav-bar > a {
+    display: inline;
+    color: black;
+    text-decoration: none;
+    padding: 0 7px;
 }
 
 #header-img {
@@ -42,7 +49,7 @@ section:first-of-type {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin: 5px auto;
+    margin: 5px auto 30px auto;
 }
 
 
@@ -58,7 +65,7 @@ form {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    margin: 10px;
+    margin: 40px;
     padding: 20px;
 }
 
@@ -70,42 +77,51 @@ input[type='email'] {
     width: 16rem;
     height: 1.8rem;
     padding-left: 10px;
+    margin: 0 auto;
 }
 input[type='submit'] {
+    margin: 0 auto;
     background-color: #f5e01a;
-    width: 7rem;
-    padding: 5px 13px;
+    width: 7.2rem;
+    padding: 8px 15px;
     font-weight: 700;
     font-size: 14px;
     text-justify: auto;
+    border: none;
 }
 
 
 .icons {
     display: flex;
     width: 60px;
-    margin: 0;
+    flex-shrink: 0;
+}
+
+
+.bio-div {
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
     left: 0;
 }
 
-.bio-div {
-    width: 600px;
-    display: flex;
-    margin: 40px auto;
-    align-items: center;
-    justify-content: center;
-    
-}
-
 .bio-div-in {
-    display: block;
-    align-items: center;
-    margin-left: 40px;
+    text-align: left;
+    margin-left: 40px;   
+}
+.bio-div-in > p {
+    display: flex;
+    margin: 5px auto;
+    text-wrap: wrap;
 }
 
 #bio-section {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    margin: 10px;
+    margin: 15px auto 15px auto;
+    width: 80%;
 }
 
 #product-section {
@@ -121,7 +137,19 @@ input[type='submit'] {
         margin: 0 auto;
         align-items: center;
     }
+    #nav-bar {
+        display: none;
+    }
+    #header {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        padding: 1px;
+        margin: 0 auto;
+        
+    }
 }
+
 
 
 .product-div {
@@ -131,13 +159,14 @@ input[type='submit'] {
     width: 350px;
     height: auto;
     text-align: center;
-    background-color: aqua;
+    background-color: transparent;
     line-height: 30px;
     border-radius: 4px;
+    border: 1px solid black;
     text-wrap: nowrap;
 }
 .divider > h2 {
-    background-color: red;
+    background-color: #e9e6e6;
     width: 100%;
     height: auto;
     font-size: 18px;
@@ -160,7 +189,7 @@ input[type='button'] {
     margin-bottom: 20px !important;
     background-color: #f5e01a;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     margin: 0 auto;
     width: 7rem;
     padding: 5px 13px;
@@ -172,3 +201,25 @@ input[type='button'] {
     width: 100%;
     margin-bottom: 18px;
 }
+
+#footer {
+    background-color: #e9e6e6;
+    height: auto;
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+#footer > a , #footer > p{
+    line-height: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    text-align: right !important;
+    text-decoration: none;
+    color: black;
+}
+
+
