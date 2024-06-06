@@ -22,11 +22,16 @@ body {
     border-right: 3px solid #59636e;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 900px) {
     #navbar {
-        display: block;
+        display: none;
+        
     }
-}
+    .main-section {
+        margin-left: -35px !important;
+    }
+}    
+
 
 .main-section {
     margin-left: 280px;
