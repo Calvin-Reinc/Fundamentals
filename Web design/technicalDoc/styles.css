@@ -112,3 +112,7 @@ h5 {
     margin-bottom: -5px;
 }
 
+#logo {
+    max-width: 60px;
+    padding-right: 5px;
+}
