@@ -10,9 +10,6 @@ class Rectangle:
         self.width = width
         self.height = height
     
-    def area(self):
-        return self.width*self.height
-    
     def rectangles(self):
         for y in range(self.height): # controls columns
             print("*"*self.width)
@@ -27,5 +24,5 @@ if __name__ == "__main__":
     value2 = int(input("enter height: "))
     myRect = Rectangle(value1, value2)
     myRect.rectangles()
-    myRect.area(    )
+    myRect.area()
 
