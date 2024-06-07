@@ -20,9 +20,15 @@ function delete_phone(userName) {
 }
 
 function search_phone() {
-    let lookFor = prompt("Whats the name of the contact: ");
+    let lookFor = prompt("Search by name: ");
     console.log("searching...");
-    let result = phoneList.include(lookFor);
+    if (phoneList[lookFor]) {
+        let result = phoneList.include(lookFor);
+    }
+    else { 
+        result = false;
+    }
+
     if (result) {
         console.log(`${lookFor} - ${phoneList[lookFor]}`);
     } else {
