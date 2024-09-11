@@ -47,7 +47,11 @@ p {padding-bottom: 2em;font-style: italic;}
 form {
     margin: 25px;
 }
-
+/* @media (max-width:800px) {
+    body {
+        width: 40rem;
+    }
+} */
 
 label {
     display: block;
