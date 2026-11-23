@@ -35,11 +35,6 @@ Getting Started
   Navigate to the desired project directory:
    cd Fundamentals/Python
 
-Contributing
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
-
-License
-This repository is licensed under the MIT License. See the LICENSE file for more details.
 
 Contact
 For any questions or issues, please open an issue in this repository. mail. konyanacv@gmail.com
